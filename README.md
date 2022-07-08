@@ -1,2 +1,3 @@
 # simple-vader-app
-Personal experiment. implementation of a webapp that uses VADER for sentiment analysis.
+Personal experiment.  
+Implementation of a webapp that uses VADER for sentiment analysis.
