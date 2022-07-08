@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #d32216;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vaderForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8;
+    flex-grow: 1;
+}
+
+#textInput {
+    resize: none;
+    background-color: rgb(18,0,4);
+    border-radius: 0;
+    border: dashed 2px #d32216;
+    color: #d32216;
+    font-size: 18px;
+    width: 360px;
+    height: 60vh;
+    padding: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+#textInput:focus {
+    box-shadow: 0 0 15px #d32216;
+    outline: none;
+}
+
+#vaderBtn {
+    background-color: rgb(18,0,4);
+    border-radius: 4px;
+    border: solid 2px #d32216;
+    color: #d32216;
+    font-size: 22px;
+    margin-top: 8px;
+    width: 374px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#vaderBtn:hover {
+    box-shadow: 0 0 15px #d32216;
+    cursor: pointer;
+}
+
+#output {
+    font-size: 18px;
+    background-color: rgb(18,0,4, 0.6);
+    width: 360px;
+}

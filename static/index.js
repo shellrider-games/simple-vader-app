@@ -9,7 +9,6 @@ async function fetchVaderSentiment(text) {
     body: jsonBody,
   });
   const response = await req.json();
-  console.log(response);
   return response;
 }
 
@@ -38,7 +37,6 @@ window.onload = () => {
     const btn = document.getElementById('vaderBtn');
     btn.addEventListener('click', async () => {
         const textArea = document.getElementById('textInput');
-        console.log(textArea.value)
         const output = await fetchVaderSentiment(textArea.value);
         setOutput(output.sentiment);
     });
