@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
 
+app.use('/static', express.static('static'));
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + "/html/index.html");
 })
@@ -21,9 +23,8 @@ app.post('/vader-analyse', (req, res) => {
     const sentiment = vader.SentimentIntensityAnalyzer.polarity_scores(text);
     reply.sentiment = sentiment;
 
-    
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(reply));
+    res.json(reply);
 })
 
 app.listen(port, () => {
