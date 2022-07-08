@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: #d32216;
+    min-height: 100vh;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
     border: dashed 2px #d32216;
     color: #d32216;
     font-size: 18px;
-    width: 360px;
+    width: 340px;
     height: 60vh;
     padding: 4px;
     transition: all 0.2s ease-in-out;
@@ -49,7 +50,7 @@ h1 {
     color: #d32216;
     font-size: 22px;
     margin-top: 8px;
-    width: 374px;
+    width: 354px;
     padding-top: 4px;
     padding-bottom: 4px;
     text-transform: uppercase;
@@ -64,5 +65,5 @@ h1 {
 #output {
     font-size: 18px;
     background-color: rgb(18,0,4, 0.6);
-    width: 360px;
+    width: 340px;
 }
